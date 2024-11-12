@@ -1,0 +1,50 @@
+.ppcp-r {
+	&-container {
+		max-width: var(--max-container-width, none);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-inner-container {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 16px 48px;
+		box-sizing: border-box;
+
+		@media screen and (max-width: 480px) {
+			padding-bottom: 36px;
+		}
+	}
+
+	&-settings-card {
+		background-color: $color-white;
+		padding: 48px;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px 0 #0000001A;
+		@media screen and (max-width: 480px) {
+			padding: 24px;
+		}
+
+		&__header {
+			display: flex;
+			align-items: center;
+			gap: 18px;
+			padding-bottom: 18px;
+			border-bottom: 2px solid $color-gray-700;
+			margin-bottom: 32px;
+		}
+
+		&__title {
+			@include font(16, 24, 600);
+			color: $color-blueberry;
+			margin: 0 0 4px 0;
+			display: block;
+		}
+
+		&__description {
+			@include font(14, 20, 400);
+			color: $color-gray-800;
+			margin: 0;
+		}
+	}
+}

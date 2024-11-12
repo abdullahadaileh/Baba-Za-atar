@@ -1,0 +1,43 @@
+.ppcp-r {
+
+	&__radio-value {
+		@include hide-input-field;
+
+		&:checked {
+			+ .ppcp-r__radio-presentation {
+				background: $color-white;
+				width: 20px;
+				height: 20px;
+				border: 6px solid $color-blueberry;
+			}
+		}
+	}
+
+	&__checkbox-value {
+		@include hide-input-field;
+
+		&:not(:checked) + .ppcp-r__checkbox-presentation img {
+			display: none;
+		}
+
+		&:checked {
+			+ .ppcp-r__checkbox-presentation {
+				width: 20px;
+				height: 20px;
+				border: none;
+
+				img {
+					border-radius: 2px;
+				}
+			}
+		}
+	}
+
+	&__radio-presentation {
+		@include fake-input-field(20px);
+	}
+
+	&__checkbox-presentation {
+		@include fake-input-field(2px);
+	}
+}

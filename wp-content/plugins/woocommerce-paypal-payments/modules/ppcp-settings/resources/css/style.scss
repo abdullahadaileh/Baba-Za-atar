@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+
+#ppcp-settings-container {
+	@import './global';
+	@import './components/reusable-components/onboarding-header';
+	@import './components/reusable-components/button';
+	@import './components/reusable-components/settings-toggle-block';
+	@import './components/reusable-components/text-control';
+	@import './components/reusable-components/separator';
+	@import './components/reusable-components/payment-method-icons';
+	@import "./components/reusable-components/payment-method-item";
+	@import './components/reusable-components/settings-wrapper';
+	@import './components/reusable-components/select-box';
+	@import './components/reusable-components/tab-navigation';
+	@import './components/reusable-components/navigation';
+	@import './components/reusable-components/fields';
+	@import './components/reusable-components/title-badge';
+	@import './components/reusable-components/_badge-box.scss';
+	@import './components/screens/onboarding';
+	@import './components/screens/dashboard/tab-dashboard';
+	@import './components/screens/dashboard/tab-payment-methods';
+}
+
+@import './components/reusable-components/payment-method-modal';

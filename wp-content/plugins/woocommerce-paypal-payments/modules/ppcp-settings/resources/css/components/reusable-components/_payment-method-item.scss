@@ -1,0 +1,48 @@
+.ppcp-r-payment-method-item {
+	display: flex;
+	align-items: center;
+
+	&:not(:last-child) {
+		padding-bottom: 32px;
+	}
+
+	&:not(:first-child) {
+		border-top: 1px solid $color-gray-400;
+		padding-top: 32px;
+	}
+
+	&__checkbox-wrap {
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		.ppcp-r__checkbox {
+			margin-right: 24px;
+		}
+	}
+
+	&__icon-wrap {
+		margin-right: 18px;
+	}
+
+	&__content {
+		padding-right: 24px;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&__title {
+		@include font(16, 20, 600);
+		color: $color-black;
+		margin: 0 0 8px 0;
+		display: block;
+	}
+
+	button {
+		margin-left: auto;
+		@include font(13, 20, 400);
+		padding: 6px 12px !important;
+	}
+}
